@@ -821,7 +821,7 @@ async def send_vote(
 
     # commit db session
     await db_session.commit()
-    
+
     return vote_id
 
 
