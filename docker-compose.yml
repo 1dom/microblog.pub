@@ -2,7 +2,9 @@ version: "3"
 
 services:
   server:
-    image: microblogpub/microblogpub:latest 
+#    image: microblogpub/microblogpub:latest 
+    build:
+      context: .
     container_name: microblogpub
     user: 10000:10000
     restart: always
