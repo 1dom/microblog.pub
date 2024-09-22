@@ -218,6 +218,10 @@ header {
       text-decoration: underline;
     }
   }
+  .summary{
+    border-top: 1px solid #e6e6e6;
+    margin-top: 0.75em;
+  }
 }
 a {
   color: $primary-color;
@@ -429,6 +433,7 @@ a.label-btn {
 .ap-object {
     margin: 15px 0;
     padding: 20px;
+    border-top: 1px solid #e6e6e6;
     nav {
         color: $muted-color;
     }

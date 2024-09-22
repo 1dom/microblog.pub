@@ -10,3 +10,22 @@ $secondary-color: #757575;
 //$muted-color: #555; // solarized comment text
 //$primary-button-text-color: #f8f9fa;
 //$code-highlight-background: #f0f0f0;
+
+
+
+  
+  header#header {
+  
+    .title {
+      vertical-align: top;
+      margin: 0.5em;
+    }
+  
+    .follow {
+      vertical-align: top;
+    }
+  
+    img {
+      height: 2em;
+    }
+  }
