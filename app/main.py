@@ -298,7 +298,9 @@ async def index(
         models.OutboxObject.visibility == ap.VisibilityEnum.PUBLIC,
         models.OutboxObject.is_deleted.is_(False),
         models.OutboxObject.is_hidden_from_homepage.is_(False),
-        models.OutboxObject.ap_type.in_(["Announce", "Note", "Video", "Question"]),
+        models.OutboxObject.ap_type.in_(
+            ["Announce", "Note", "Video", "Question", "Article"]
+        ),
     )
     q = select(models.OutboxObject).where(*where)
     total_count = await db_session.scalar(
